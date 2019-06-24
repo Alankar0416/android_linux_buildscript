@@ -14,7 +14,7 @@ This is a bash script to delegate building Android APKs and sharing them with st
 RELATIVEPATH="ixigo_android/ixigo-app-android/"
 ```
 
-6. Change the build type conditions and variables to suit your need. `ar` - Release or `ad` - Debug if you have a single app project. `module` is the app in a multimodule project remove it if you have a single app. `buildcmd` is the argument following `./gradlew`, change it as per your project, flavors, and requirement. Lastly, `apkpath` is the path from which to extract generated apks.
+6. Change the build type conditions and variables to suit your need. We at @ixigo have two apps(Trains and Flights) and two versions, so 4 variants in total.Use `ar` - Release or `ad` - Debug if you have a single app project. `module` is the app in a multimodule project remove it if you have a single app. `buildcmd` is the argument following `./gradlew`, change it as per your project, flavors, and requirement. Lastly, `apkpath` is the path from which to extract generated apks.
 
 ```bash
 if [ "$1" == "tr" ]
@@ -56,7 +56,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## PS
 
-I am not an expert in bash. I just learned bash in order to write this script so there may be optimizations which I have missed. If that is the case feel free to add a comment or send an MR. 🙏 
+I am not an expert in bash. I just learned bash in order to write this script so there may be optimizations which I have missed. If that is the case feel free to add a comment or send an MR 🙏.
+
+We use it everyday at ixigo and it definitely have made our life easier. **Even our PM's can now trigger builds if you tell them the branch name 😛 
 
 I think it's best to be used in a small to medium scale enterprise where while developing apps there are many things that developers need to take care of because they are a part of the Android Team. 💻 Sharing timely builds to an internal QA team. Sharing build with Project managers and Design team for review. Sharing builds with your CEOs and CTOs (they better not have bugs). Sharing with third parties…. and the list goes on. 
 
