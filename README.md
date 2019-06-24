@@ -58,7 +58,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 I am not an expert in bash. I just learned bash in order to write this script so there may be optimizations which I have missed. If that is the case feel free to add a comment or send an MR 🙏.
 
-We use it everyday at ixigo and it definitely have made our life easier. **Even our PM's can now trigger builds if you tell them the branch name 😛 
+We use it everyday at ixigo and it definitely have made our life easier. **Even our PM's can now trigger builds if you tell them the branch name** 😛 
 
 I think it's best to be used in a small to medium scale enterprise where while developing apps there are many things that developers need to take care of because they are a part of the Android Team. 💻 Sharing timely builds to an internal QA team. Sharing build with Project managers and Design team for review. Sharing builds with your CEOs and CTOs (they better not have bugs). Sharing with third parties…. and the list goes on. 
 
