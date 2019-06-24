@@ -42,7 +42,7 @@ then
 
 [Optional] *`-l` as the third argument to disable posting to slack.*
 
-[Optional] *`-M` or `-m` or `--message` Custom message to be sent after the apks are published.*
+[Optional] *`-M` or `-m` or `--message` Custom post-build message to be sent after the apks are published. Feel free to add slack handles of channel and users here*
 
 [Optional] *`-u` or `-U` or `--user` User triggering the build.* Good practice to know who sent the post-build message. Feel free to enforce this if Authors are skipping it 😉
 
