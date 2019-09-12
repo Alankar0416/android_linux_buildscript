@@ -1,6 +1,7 @@
 RELATIVEPATH="ixigo_android/ixigo-app-android/"
 SLACK_TOKEN="xoxb-ABCDEFGHIJKNMNOPQRST"
 SLACK_CHANNEL="XXYYZZZ" #android_builds channel
+TEMP_OUTPUT_DIRECTORY_PATH="../ixigo_android_build_output"
 
 cd $RELATIVEPATH
 
@@ -163,7 +164,10 @@ then
 else
         #Extract and post the generated apks
         currentDirectory=$(pwd)
-        cd $apkPath
+        rm -r "$TEMP_OUTPUT_DIRECTORY_PATH"/*
+        #echo "about to execute rm -rf ${TEMP_OUTPUT_DIRECTORY_PATH}/*"
+        cp -v -R "$apkPath/" $TEMP_OUTPUT_DIRECTORY_PATH
+        cd $TEMP_OUTPUT_DIRECTORY_PATH
         postBranchMesageToSlack $branch $user
         for file in ./*.apk
         do
